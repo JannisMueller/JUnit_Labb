@@ -2,9 +2,6 @@ package se.iths;
 
 import org.junit.jupiter.api.*;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
-
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,10 +9,25 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
+        // counter to keep track on which the tests
+        int i = 0;
+
        @BeforeAll
         void beforeAllTest() {
             System.out.println("Testing starts");
         }
+
+        @BeforeEach
+        void beforeEachTest(){
+            i++;
+            System.out.println("Test number " + i + " starts");
+        }
+
+        @AfterEach
+        void afterEachTest(){
+            System.out.println("Test number " + i + " done");
+        }
+
 
         @DisplayName("Test of method addition from class Calculator")
         @Test
@@ -26,6 +38,7 @@ class CalculatorTest {
 
         @DisplayName("Test of method subtraction from class Calculator")
         @Test
+        @Disabled("Test not necessary anymore")
         void testSubtraction () {
             Calculator calculator = new Calculator();
             assertEquals(100, calculator.subtraction(150, 50));
@@ -40,7 +53,7 @@ class CalculatorTest {
         }
 
         @DisplayName("Test of method division from class Calculator")
-        @Test
+        @RepeatedTest(5)
         void testDivisions() {
         Calculator calculator = new Calculator();
         assertNotNull(calculator.division(10, 10));
