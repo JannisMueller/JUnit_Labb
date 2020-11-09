@@ -1,6 +1,6 @@
 # JUnit_Labb
 
-Denna repository innehållar min lösning för Labb 2 i kursen "Javaverktyg och byggmiljöer" (ITHS, 2020).
+Denna repository innehållar min lösning för Labb 2 (kurs "Javaverktyg och byggmiljöer", ITHS 2020).
 
 ## JUnit - Labb
 1. Skapa ett nytt projekt med Maven. Se till att inkludera JUnit 5 som depencency.
