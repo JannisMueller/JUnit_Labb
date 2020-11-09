@@ -23,11 +23,12 @@ class CalculatorTest  {
             i++;
             System.out.println("Test number " + i + ": "
             + testInfo.getDisplayName());
+            System.out.println("Method " + testInfo.getTestMethod() + " was tested!");
         }
 
         @AfterEach
         void afterEachTest(TestInfo testInfo){
-            System.out.println(testInfo.getDisplayName() + " done");
+            System.out.println(testInfo.getDisplayName() + " done!");
         }
 
         @DisplayName("Test of method addition from class Calculator")
