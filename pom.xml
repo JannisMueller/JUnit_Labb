@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>se.iths</groupId>
-    <artifactId>git branch -M main</artifactId>
+    <artifactId>JUnit_Labb</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <name>Junit_Labb </name>
