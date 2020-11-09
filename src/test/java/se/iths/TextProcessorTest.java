@@ -5,6 +5,7 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
 class TextProcessorTest {
 
@@ -27,6 +28,7 @@ class TextProcessorTest {
 
     @DisplayName("Test of method stringToUppercase from class TextProcessor")
     @RepeatedTest(2)
+    @Order(3)
     void testStringToUppercase(){
         TextProcessor textProcessor = new TextProcessor();
         assertEquals("JANNIS", textProcessor.stringToUppercase("jannis"));
@@ -34,6 +36,7 @@ class TextProcessorTest {
 
     @DisplayName("Test of method stringToLowercase from class TextProcessor")
     @Test
+    @Order(1)
     void testStringToLowercase(){
         TextProcessor textProcessor = new TextProcessor();
         assertNotNull(textProcessor.stringToLowercase("JANNIS"));
@@ -41,6 +44,7 @@ class TextProcessorTest {
 
     @DisplayName("Test of method stringReverse from class TextProcessor")
     @Test
+    @Order(2)
     void testStringReverse(){
         TextProcessor textProcessor = new TextProcessor();
         assertFalse(textProcessor.stringReverse("jannis").equals("jannis"));
@@ -49,6 +53,7 @@ class TextProcessorTest {
     @Disabled
     @DisplayName("Additional test of method stringReverse from class TextProcessor")
     @Test
+    @Order(4)
     void testStringReverseAssert(){
         TextProcessor textProcessor = new TextProcessor();
         assertEquals("sinnaj",textProcessor.stringReverse("jannis"));

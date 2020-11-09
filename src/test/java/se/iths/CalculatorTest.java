@@ -42,7 +42,6 @@ class CalculatorTest  {
 
         @DisplayName("Test of method subtraction from class Calculator")
         @Test
-        @Disabled("Test not necessary anymore")
         @Order(4)
         void testSubtraction () {
             Calculator calculator = new Calculator();
