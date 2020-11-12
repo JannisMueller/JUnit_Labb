@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="se.iths.CalculatorTest" time="0.107" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="se.iths.CalculatorTest" time="0.113" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.6+8-b765.1"/>
@@ -62,14 +62,14 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testMultiplication" classname="se.iths.CalculatorTest" time="0.031"/>
-  <testcase name="testDivisions[1]" classname="se.iths.CalculatorTest" time="0.002"/>
+  <testcase name="testMultiplication" classname="se.iths.CalculatorTest" time="0.035"/>
+  <testcase name="testDivisions[1]" classname="se.iths.CalculatorTest" time="0.003"/>
   <testcase name="testDivisions[2]" classname="se.iths.CalculatorTest" time="0.001"/>
   <testcase name="testDivisions[3]" classname="se.iths.CalculatorTest" time="0.001"/>
   <testcase name="testDivisions[4]" classname="se.iths.CalculatorTest" time="0.001"/>
-  <testcase name="testDivisions[5]" classname="se.iths.CalculatorTest" time="0"/>
-  <testcase name="testAddition{int}[1]" classname="se.iths.CalculatorTest" time="0.02"/>
-  <testcase name="testAddition{int}[2]" classname="se.iths.CalculatorTest" time="0.001"/>
-  <testcase name="testAddition{int}[3]" classname="se.iths.CalculatorTest" time="0.002"/>
-  <testcase name="testSubtraction" classname="se.iths.CalculatorTest" time="0.001"/>
+  <testcase name="testDivisions[5]" classname="se.iths.CalculatorTest" time="0.001"/>
+  <testcase name="testAddition{int}[1]" classname="se.iths.CalculatorTest" time="0.024"/>
+  <testcase name="testAddition{int}[2]" classname="se.iths.CalculatorTest" time="0"/>
+  <testcase name="testAddition{int}[3]" classname="se.iths.CalculatorTest" time="0.001"/>
+  <testcase name="testSubtraction" classname="se.iths.CalculatorTest" time="0.002"/>
 </testsuite>

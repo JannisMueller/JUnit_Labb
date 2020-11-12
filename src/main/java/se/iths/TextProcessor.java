@@ -6,7 +6,7 @@ package se.iths;
            return message.toUpperCase();
         }
 
-        public String stringToLowercase(String message) {
+       public String stringToLowercase(String message) {
             return message.toLowerCase();
         }
 

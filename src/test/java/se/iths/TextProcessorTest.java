@@ -33,7 +33,6 @@ class TextProcessorTest {
         TextProcessor textProcessor = new TextProcessor();
         assertEquals("JANNIS", textProcessor.stringToUppercase("jannis"));
     }
-
     @DisplayName("Test of method stringToLowercase from class TextProcessor")
     @Test
     @Order(1)
